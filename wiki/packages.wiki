@@ -1,4 +1,4 @@
 {{{
 test1 http://msys-cn.googlecode.com/svn/wiki/packages.wiki /extra
-test2 http://phoenix-system.googlecode.com/files/msys.bat /extra
+test2 http://phoenix-system.googlecode.com/files/phoenix-kernel-0.01.tar.bz2 /extra
 }}}
