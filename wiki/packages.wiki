@@ -1,2 +1,4 @@
+{{{
 test1 http://msys-cn.googlecode.com/svn/wiki/packages.wiki /extra
 test2 http://phoenix-system.googlecode.com/files/msys.bat /extra
+}}}
