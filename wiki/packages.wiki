@@ -1,3 +1,6 @@
 {{{
 freetype2 http://msys-cn.googlecode.com/files/freetype2.mpkg
+libjpeg   http://msys-cn.googlecode.com/files/libjpeg.mpkg
+libgif    http://msys-cn.googlecode.com/files/libgif.mpkg
+glut      http://msys-cn.googlecode.com/files/glut.mpkg
 }}}
