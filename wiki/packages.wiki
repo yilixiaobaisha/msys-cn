@@ -1,4 +1,3 @@
 {{{
-test1  http://msys-cn.googlecode.com/svn/wiki/packages.wiki
-kernel http://phoenix-system.googlecode.com/files/phoenix-kernel-0.01.tar.bz2
+freetype2 http://msys-cn.googlecode.com/files/freetype2.mpkg
 }}}
