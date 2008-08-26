@@ -1,6 +1,14 @@
+#labels Featured,Phase-Implementation,Phase-Support
 {{{
 freetype2 http://msys-cn.googlecode.com/files/freetype2.mpkg
 libjpeg   http://msys-cn.googlecode.com/files/libjpeg.mpkg
 libgif    http://msys-cn.googlecode.com/files/libgif.mpkg
+libpng    http://msys-cn.googlecode.com/files/libpng.mpkg
+libtiff   http://msys-cn.googlecode.com/files/libtiff.mpkg
+tcltk     http://msys-cn.googlecode.com/files/tcltk.mpkg
+zlib      http://msys-cn.googlecode.com/files/zlib.mpkg
+zip       http://msys-cn.googlecode.com/files/zip.mpkg
+unzip     http://msys-cn.googlecode.com/files/unzip.mpkg
+SDL       http://msys-cn.googlecode.com/files/SDL.mpkg
 glut      http://msys-cn.googlecode.com/files/glut.mpkg
 }}}
