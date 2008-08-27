@@ -14,7 +14,9 @@ SDL       http://msys-cn.googlecode.com/files/SDL.mpkg
 glut      http://msys-cn.googlecode.com/files/glut.mpkg
 fltk      http://msys-cn.googlecode.com/files/fltk.mpkg
 fltk2     http://msys-cn.googlecode.com/files/fltk2.mpkg
-emulators 
+* 
+*emulators 
+* 
 qemu      http://msys-cn.googlecode.com/files/qemu.mpkg
 bochs     http://msys-cn.googlecode.com/files/bochs.mpkg
 }}}
