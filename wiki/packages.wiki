@@ -12,4 +12,5 @@ zip       http://msys-cn.googlecode.com/files/zip.mpkg
 unzip     http://msys-cn.googlecode.com/files/unzip.mpkg
 SDL       http://msys-cn.googlecode.com/files/SDL.mpkg
 glut      http://msys-cn.googlecode.com/files/glut.mpkg
+fltk2     http://msys-cn.googlecode.com/files/fltk2.mpkg
 }}}
