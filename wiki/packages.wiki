@@ -17,4 +17,5 @@ fltk2     http://msys-cn.googlecode.com/files/fltk2.mpkg
 qemu      http://msys-cn.googlecode.com/files/qemu.mpkg
 bochs     http://msys-cn.googlecode.com/files/bochs.mpkg
 update-1  http://msys-cn.googlecode.com/files/update-1.mpkg
+demo      http://msys-cn.googlecode.com/files/demo.mpkg
 }}}
