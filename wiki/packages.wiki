@@ -18,6 +18,7 @@ qemu      http://msys-cn.googlecode.com/files/qemu.mpkg
 bochs     http://msys-cn.googlecode.com/files/bochs.mpkg
 demo      http://msys-cn.googlecode.com/files/demo.mpkg
 doxygen   http://msys-cn.googlecode.com/files/doxygen.mpkg
+graphviz  http://msys-cn.googlecode.com/files/graphviz.mpkg
 
 update-1  http://msys-cn.googlecode.com/files/update-1.mpkg
 }}}
