@@ -4,6 +4,7 @@
 
  * This site provides a full Minimal SYStem originally from www.mingw.org, we programmed a package management system _mpkg_ to manage and distribute packages.
  * The MSYS is compatible from user's view with Linux and UNIX development environments. Users can do Linux/UNIX shell works for educational and development purpose.
+ * The compiler package supplies C/C++/Fortran compilers by defalt.
 
  * If you are interested providing us other tools such as packages and cross compiler support, or even interested in becoming a developer, please contact us through ways listed below.
  * If you have project or tools hosted on your space and wanted to be part of the distribution for better support, please contact us too.
