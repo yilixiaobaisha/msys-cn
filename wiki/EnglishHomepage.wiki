@@ -12,8 +12,8 @@
 
 =CONTACT=
 
- # Baidu IM       : 1039984
- # QQ IM          : 18266455
+ # Baidu IM Group : 1039984
+ # QQ IM Group    : 18266455
  # Technical Forum: [http://www.woos.cn/bbs/thread.php?fid=34]
  # Maillist       : [http://groups.google.com/group/phoenix-development phoenix-development@googlegroups.com]
 
