@@ -31,7 +31,7 @@ First, you need to install following packages manually:
 
 And one of the following:
  # GCC 4 Compiler   : http://msys-cn.googlecode.com/files/mingw.7z
- # GCC 3 Compiler   : http://phoenix-system.googlecode.com/files/mingw.7z
+ # GCC 3 Compiler   : http://phoenix-system.googlecode.com/files/MingW.rar
 
  * *Notice*: Although gcc 4 has better optimization, it has some compatibility issues such as building the Qemu source, if you need to operate packages like this condition, you need to use gcc 3.
 
