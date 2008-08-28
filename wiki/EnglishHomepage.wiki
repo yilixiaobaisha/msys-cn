@@ -21,8 +21,8 @@
 
 [http://msys-cn.googlecode.com/files/overview-1.JPG]
 [http://msys-cn.googlecode.com/files/overview-2.jpeg]
-[http://msys-cn.googlecode.com/files/overview-3.jpeg]
-[http://msys-cn.googlecode.com/files/overview-4.jpeg]
+[http://msys-cn.googlecode.com/files/overview-3.jpg]
+[http://msys-cn.googlecode.com/files/overview-4.jpg]
 
 =READ FIRST=
 
