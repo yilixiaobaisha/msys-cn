@@ -18,16 +18,9 @@
  # Technical Forum: [http://www.woos.cn/bbs/thread.php?fid=34]
  # Maillist       : [http://groups.google.com/group/phoenix-development phoenix-development@googlegroups.com]
 
-=SCREENSHOTS=
-
-[http://msys-cn.googlecode.com/files/overview-1.JPG]
-[http://msys-cn.googlecode.com/files/overview-2.jpeg]
-[http://msys-cn.googlecode.com/files/overview-3.jpg]
-[http://msys-cn.googlecode.com/files/overview-4.jpg]
-
 =READ FIRST=
 
-First, you need to install following packages manually:
+Read _NOTICE_ in the end of this page first, then you need to install following packages manually:
  # MSYS Base System : http://msys-cn.googlecode.com/files/MSYS.7z
 
 And one of the following:
@@ -104,5 +97,19 @@ mpkg --install demo
  # Your username, installation path must not contain white space, unicode character, or else, the installation fails, or will not working for building specific packages.
  # The MingW compiler as provided is a TDM version, it contains only a partial POSIX system calls, lake of some essential calls such as fork, but with a full version of Windows API.
  # If you need a Linux cross compiler, or embedded system development toolchain, please watch our distros or compile it yourself, if you want to share with others, contact us.
+
+=SCREENSHOTS=
+
+==Displaying versions of tools==
+ [http://msys-cn.googlecode.com/files/overview-1.JPG]
+
+==Available package lists==
+ [http://msys-cn.googlecode.com/files/overview-2.jpeg]
+
+==When entering function name, press Ctrl+x Ctrl+o to autocomplete==
+ [http://msys-cn.googlecode.com/files/overview-3.jpg]
+
+==After pressing F12 updating the tags database, input '.' '->' to intellisense==
+ [http://msys-cn.googlecode.com/files/overview-4.jpg]
 
 Last Updated: 2008.08.28
