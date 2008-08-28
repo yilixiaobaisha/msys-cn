@@ -31,7 +31,7 @@ And one of the following:
  # GCC 4 Compiler   : http://msys-cn.googlecode.com/files/mingw.7z
  # GCC 3 Compiler   : http://phoenix-system.googlecode.com/files/mingw.7z
 
- *Notice: Although gcc 4 has better optimization, it has some compatibility issues such as building the Qemu source, if you need to operate packages like this condition, you need to use gcc 3.
+ * *Notice*: Although gcc 4 has better optimization, it has some compatibility issues such as building the Qemu source, if you need to operate packages like this condition, you need to use gcc 3.
 
  Un-7z both to the same directory, execute the msys.bat then you get a working shell.
 
