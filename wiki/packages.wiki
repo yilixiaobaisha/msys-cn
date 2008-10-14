@@ -20,6 +20,7 @@ demo      http://msys-cn.googlecode.com/files/demo.mpkg
 doxygen   http://msys-cn.googlecode.com/files/doxygen.mpkg
 graphviz  http://msys-cn.googlecode.com/files/graphviz.mpkg
 svn       http://msys-cn.googlecode.com/files/svn.mpkg
+wxWidgets http://msys-cn.googlecode.com/files/wxWidgets.mpkg
 
 update-1  http://msys-cn.googlecode.com/files/update-1.mpkg
 }}}
