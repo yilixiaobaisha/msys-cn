@@ -112,4 +112,7 @@ mpkg --install demo
 ==After pressing F12 updating the tags database, input '.' '->' to intellisense==
  [http://msys-cn.googlecode.com/files/overview-4.jpg]
 
+==Visual Windows form design==
+ [http://msys-cn.googlecode.com/files/overview-5.jpg]
+
 Last Updated: 2008.08.28
