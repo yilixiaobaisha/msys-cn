@@ -38,13 +38,14 @@ MSYS 包管理系统 版本 1.0
 
 }}}
 
-=系统级更新=
+=附加软件包列表=
 
+ 系统级更新
 {{{
 mpkg --install update-1
 }}}
 
-=扩展工具包=
+ 扩展工具包
 {{{
 mpkg --install insight    # insight可视化调试器
 mpkg --install SDL        # SDL游戏开发库
