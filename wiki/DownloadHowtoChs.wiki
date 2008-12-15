@@ -2,10 +2,10 @@
 
 ==选择1==
 
-首先，请先阅读本页最后的注意事项，然后安装下列基础包：
+ 首先，请先阅读本页最后的注意事项，然后安装下列基础包：
  * MSYS基础系统：http://msys-cn.googlecode.com/files/MSYS.7z
 
-以下只选其一
+ 以下只选其一
  * GCC 4 编译器：http://msys-cn.googlecode.com/files/mingw.7z
  * GCC 3 编译器：http://msys-cn.googlecode.com/files/mingw3.7z
 
@@ -13,15 +13,15 @@
 
 ==选择2==
 
-为了方便需要两个编译器一同可选择使用的需求，提供如下的双编译器共存版本：
+ 为了方便需要两个编译器一同可选择使用的需求，提供如下的双编译器共存版本：
  * MSYS 双编译器版本：http://www.assembleart.org/down/MSYS/MSYS.7z
  * MSYS GCC 4整合版：http://down.heihaier.org/Windows/MSYS.7z
 
-将其内容解压到相同目录下，运行其中的 MSYS.bat 即可启动运行 MSYS 系统。
+ 将其内容解压到相同目录下，运行其中的 MSYS.bat 即可启动运行 MSYS 系统。
 
 =mpkg 使用方法=
 
-{{{
+ {{{
 MSYS 包管理系统 版本 1.0
 版权所有 (C) 2008, 唐华欣
 版权所有 (C) 2008, 合肥工业大学
@@ -40,19 +40,19 @@ MSYS 包管理系统 版本 1.0
 
 =附加软件包列表=
 
-系统级更新
+ 系统级更新
 {{{
 mpkg --install update-1
 }}}
 
-扩展工具包
+ 扩展工具包
 {{{
 mpkg --install insight    # insight可视化调试器
 mpkg --install SDL        # SDL游戏开发库
 mpkg --install zlib       # zlib压缩库
 }}}
 
-图形应用程序创建工具：
+ 图形应用程序创建工具：
 {{{
 mpkg --install resedit    # 免费Windows可视化资源编辑器
 mpkg --install fltk       # 跨平台图形程序库
@@ -60,23 +60,23 @@ mpkg --install fltk2      # 跨平台图形程序库2.0
 mpkg --install wxWidgets  # 跨平台图形程序库
 }}}
 
-虚拟机包：
+ 虚拟机包：
 {{{
 mpkg --install bochs      # Bochs虚拟机
 mpkg --install qemu       # Qemu虚拟机
 }}}
 
-TclTk图形开发脚本
+ TclTk图形开发脚本
 {{{
 mpkg --install tcltk      # 跨平台脚本图形程序开发工具
 }}}
 
-Subversion版本控制程序
+ Subversion版本控制程序
 {{{
 mpkg --install svn        # 著名的版本控制软件
 }}}
 
-自动文档生成工具
+ 自动文档生成工具
 {{{
 mpkg --install doxygen    # 自动代码文档生成工具
 mpkg --install graphviz   # GNU方块图绘制软件
