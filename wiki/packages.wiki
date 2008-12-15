@@ -1,4 +1,4 @@
-#labels Featured,Phase-Implementation,Phase-Support
+#labels Phase-Implementation,Phase-Support
 {{{
 insight   http://msys-cn.googlecode.com/files/insight.mpkg
 freetype2 http://msys-cn.googlecode.com/files/freetype2.mpkg
