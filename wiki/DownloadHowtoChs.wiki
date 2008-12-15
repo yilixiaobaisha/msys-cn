@@ -1,6 +1,7 @@
 =安装方法=
 
 ==选择1==
+
 首先，请先阅读本页最后的注意事项，然后安装下列基础包：
  * MSYS基础系统：http://msys-cn.googlecode.com/files/MSYS.7z
 
@@ -11,13 +12,12 @@
  * *注意*：GCC 4 存在部分兼容问题，比如Qemu代码无法编译，请斟酌考虑。
 
 ==选择2==
+
 为了方便需要两个编译器一同可选择使用的需求，提供如下的双编译器共存版本：
  * MSYS 双编译器版本：http://www.assembleart.org/down/MSYS/MSYS.7z
  * MSYS GCC 4整合版：http://down.heihaier.org/Windows/MSYS.7z
 
-将其内容解压到相同目录下，运行其中的 MSYS.bat 即可启动运行 MSYS 系统。将下载的最新版mpkg放到MSYS根目录的bin子目录下。
-
-环境中使用 mpkg 程序进行系统附加包、库的下载、删除等维护，改工具目前处于初始阶段，尚不具备依赖关系处理能力，但目前提供的包都尽量降低了依赖程度而以静态编译。
+将其内容解压到相同目录下，运行其中的 MSYS.bat 即可启动运行 MSYS 系统。
 
 =mpkg 使用方法=
 
