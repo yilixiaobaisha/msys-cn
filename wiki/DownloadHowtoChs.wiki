@@ -46,47 +46,45 @@ mpkg --install update-1
 
 =扩展工具包=
 {{{
-mpkg --install insight
-mpkg --install SDL
-mpkg --install zlib
+mpkg --install insight    # insight可视化调试器
+mpkg --install SDL        # SDL游戏开发库
+mpkg --install zlib       # zlib压缩库
 }}}
 
  图形应用程序创建工具：
 {{{
-mpkg --install resedit
-mpkg --install fltk
-mpkg --install fltk2
-mpkg --install wxWidgets
+mpkg --install resedit    # 免费Windows可视化资源编辑器
+mpkg --install fltk       # 跨平台图形程序库
+mpkg --install fltk2      # 跨平台图形程序库2.0
+mpkg --install wxWidgets  # 跨平台图形程序库
 }}}
 
  虚拟机包：
 {{{
-mpkg --install bochs
-mpkg --install qemu
+mpkg --install bochs      # Bochs虚拟机
+mpkg --install qemu       # Qemu虚拟机
 }}}
 
  TclTk图形开发脚本
 {{{
-mpkg --install tcltk
+mpkg --install tcltk      # 跨平台脚本图形程序开发工具
 }}}
 
  Subversion版本控制程序
 {{{
-mpkg --install svn
+mpkg --install svn        # 著名的版本控制软件
 }}}
 
  自动文档生成工具
 {{{
-mpkg --install doxygen
-mpkg --install graphviz
+mpkg --install doxygen    # 自动代码文档生成工具
+mpkg --install graphviz   # GNU方块图绘制软件
 }}}
 
  创建自己的发行包的实例教程
 {{{
-mpkg --install demo
+mpkg --install demo       # 演示
 }}}
-
- 
 
 =常见问题=
 
