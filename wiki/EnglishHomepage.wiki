@@ -115,4 +115,4 @@ mpkg --install demo
 ==Visual Windows form design==
  [http://msys-cn.googlecode.com/files/overview-5.jpg]
 
-Last Updated: 2008.08.28
+Last Updated: 2008.12.15
