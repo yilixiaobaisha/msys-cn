@@ -43,9 +43,9 @@ MSYS 包管理系统 版本 1.0
 
 =附加软件包列表=
 
- 系统级更新
+ 系统级更新（不需要安装update-1了，update-2为积累更新）
 {{{
-mpkg --install update-1
+mpkg --install update-2
 }}}
 
  扩展工具包
