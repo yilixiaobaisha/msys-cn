@@ -22,7 +22,6 @@ graphviz  http://msys-cn.googlecode.com/files/graphviz.mpkg
 svn       http://msys-cn.googlecode.com/files/svn.mpkg
 wxWidgets http://msys-cn.googlecode.com/files/wxWidgets.mpkg
 resedit   http://msys-cn.googlecode.com/files/resedit.mpkg
-
 update-1  http://msys-cn.googlecode.com/files/update-1.mpkg
 update-2  http://msys-cn.googlecode.com/files/update-2.mpkg
 }}}
