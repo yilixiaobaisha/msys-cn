@@ -1,0 +1,158 @@
+#summary 文件系统树算法
+
+= 介绍 =
+
+在这里放上一个简单的文件系统树算法的实现，供设计参考
+
+
+= 代码 =
+
+{{{
+/****************************************************************************
+ * 简易内核用文件系统树（B+树）数据结构
+ *
+ * Copyright (C) 2008, 唐华欣
+ * Copyright (C) 2008, 合肥工业大学
+ * codemastor AT gmail DOT com
+ *
+ * 本代码基于GPL协议发布
+ ****************************************************************************/
+#include <stdio.h>
+
+struct inode
+{
+	struct inode *parent, *child, *next;
+	char name[20];
+};
+
+struct inode root = {0, 0, 0, 0};
+
+int slen(char *str)
+{
+	int len = 0;
+	while((*str != '/') && (*str != '\0')) {
+		len++;
+		str++;
+	}
+
+	if(*str == '/') {
+		return len+1;
+	} else {
+		return 0;	// possibly not the end of path
+	}
+
+	return 0;
+}
+
+struct inode *iget(char *path, struct inode *ip)
+{
+	int len = 0;
+
+	// process the '/' root identifier
+	if(*path == '/') {
+		ip = &root;	// point to the root node
+		path++;		// get over '/'
+	}
+
+	// get the current dir name length (including '/')
+	len = slen(path);	// get the length of current dir
+	printf("%d:%s\n", len, path);
+
+	if(len == 0) {
+		return ip;
+	}
+
+	// do the search
+	for(ip = ip->child; ip != 0; ip=ip->next) {
+		if(!strncmp(path, ip->name, len-1)) {
+			break;
+		}
+	}
+
+	// check if we have a valid ip value
+	if(ip == 0) {
+		printf("error: node not exist\n");
+		return (struct inode*) -1;
+	}
+
+	// do recursion
+	if(len == 0) {
+		return ip;
+	} else {
+		return iget(path + len, ip);
+	}
+
+	return 0;
+}
+
+struct inode *mknode(char *path)
+{
+	printf("\nthe address is:  %p\n",path);
+	struct inode *ip;
+
+	// get the parent node to create
+	if((ip = iget(path, &root)) == (struct inode *)-1) {
+		printf("error: target directory not exist, cannot create\n");
+		return (struct inode *) -1;
+	}
+	printf("\nthe later address is :  %p\n",path);
+
+	// get the target's name to create (bottom-up search)
+	printf("The string is :  %s\n\n",path);
+	int i, len = strlen(path);
+	for(i=len; (i!=0) && (path[i-1] != '/'); i--);
+
+	// allocate new node
+	struct inode *nip;
+	nip = malloc(sizeof(struct inode));
+
+	// set linkage
+	nip->parent = ip;
+	nip->next   = ip->child;
+	nip->child  = 0;
+	 ip->child  = nip;
+
+	// set name (and other values if exist)
+	strcpy(nip->name, &path[i]);
+
+	return 0;
+}
+
+int sem = 0;
+
+void printree(struct inode *ip)
+{
+	int semno;
+
+	semno = sem;
+	while(semno--) printf("\t");
+	printf("%s\n", ip->name);
+
+	sem++;
+
+	for(ip = ip->child; ip!=0; ip=ip->next) {
+		printree(ip);
+	}
+
+	sem--;
+}
+
+int main()
+{
+	strcpy(root.name, "root");
+	mknode("/home");
+	mknode("/home/martin");
+	mknode("/home/luojun");
+	mknode("/home/luojun/newnode");
+	mknode("/home/luojun/newnode2");
+	mknode("/home/luojun/newnode3");
+	mknode("/home/joysom");
+	mknode("/abc");
+	mknode("/abc/hello");
+	mknode("/abc/world");
+
+	printf("\n---------tree structure---------\n");
+	printree(&root);
+	return 0;
+}
+}}}
