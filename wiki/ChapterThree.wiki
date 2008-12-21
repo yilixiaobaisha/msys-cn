@@ -254,3 +254,135 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrev, LPSTR lpCmd, int nCmd)
 }
 
 }}}
+
+到这里，我们第二个Hello World版本也结束了，到这里我们已经学习了如何创建Windows对话框，初步的使用控件和消息的处理，可能大家还有一个疑问，为什么我们编译出来的程序如果在Windows下直接双击执行，会出现一个后面的黑色控制台，这不是很丑？其实这是MSYS开发Windows应用程序的独有优势，我们可以利用后面的控制台显示我们需要的printf内容，也就是传统开发者可以尽情的使用自己熟悉的控制台显示命令进行调试工作，我们当然有办法将这个控制台关闭，通过修改Makefile如下一行，或者手工编译命令：
+ {{{
+LDFLAGS=-mwindows
+}}}
+ {{{
+# 链接的时候添加参数如下：
+gcc main.o resource.o -mwindows  # -mwindows说明用windows窗口模式链接
+}}}
+
+好了，我们第二个Windows版本Hello World结束了，相信大家有了不少的收获，因为读到这里并且充分理解了的话，我们已经正式从C语言步入了Windows编程的领域 :)
+
+=第三个版本的Hello World=
+
+在上一节中，我们领略了简单的对话框的创建与开发，虽然我们接触了消息机制，但是我们并没有实质性的接触消息机制的实现，在这个例子中我们将用另一种完全手工设计窗体的模式（不用resedit），实现一个用绘图函数写上的Hello World程序。
+
+首先我们需要理解，在Windows窗体程序设计中，极大多数时候我们需要的是界面编程，因此上一节中的方法是界面编程的框架，我们现在使用的手工编程方法，是用于更加自主、裁剪化的方法设计窗体，一般对于做纯图形程序、游戏之类的可能用的比较多一些，比如3D编程（用OpenGL或者DirectX，我们将在后面的例子中进行介绍）。
+
+下面我们开始winhello3，创建目录后我们就可以开始写入代码了，代码、分析如下：
+ {{{
+#include <windows.h>
+
+// 这是窗体版本的回叫函数，注意，与对话框的回叫函数有所不同
+// 在窗体中，比如我们设计一些特殊控件、图形显示、3D模块等等，都是通过修改这个回叫函数实现的
+LRESULT CALLBACK WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
+{
+	switch(uMsg) {
+        // 窗口创建消息
+	case WM_CREATE:
+		MessageBox(hwnd, "Hello World!", "From MSYS", 0);
+		break;
+        // 对话框重新绘制消息，每当窗口更新时产生
+	case WM_PAINT:
+		{
+			PAINTSTRUCT ps;
+			HDC         hdc;    // 绘制设备句柄
+
+                        // 开始绘制
+			hdc = BeginPaint(hwnd, &ps);
+
+                        // 用这个函数实现字符串的打印
+			TextOut(hdc, 10, 10, "hello world from MSYS", 21);
+
+                        // 结束绘制
+			EndPaint(hwnd, &ps);
+		}
+		break;
+	case WM_DESTROY:
+		PostQuitMessage(0);
+		break;
+	default:
+                // 窗口回叫函数中，不进行处理的消息，Windows需要回收，对话框不需要
+		return DefWindowProc(hwnd, uMsg, wParam, lParam);
+	}
+        // 这里永远也不会走到
+	return 0;
+}
+
+int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrev, LPSTR lpCmd, int nCmd)
+{
+	WNDCLASS wc;     // 窗体类数据结构，这里我们说的类，与C++中的不是一个概念
+	MSG      msg;    // 消息存储结构
+	HWND     hwnd;   // 创建的窗口的句柄保存位置
+
+        // 初始化设置窗口类
+	wc.style         = CS_VREDRAW | CS_HREDRAW;
+	wc.lpfnWndProc   = WndProc;
+	wc.cbClsExtra    = 0;
+	wc.cbWndExtra    = 0;
+	wc.hInstance     = hInst;
+	wc.hIcon         = LoadIcon(NULL, IDI_APPLICATION);
+	wc.hCursor       = LoadCursor(NULL, IDC_ARROW);
+	wc.hbrBackground = (HBRUSH)COLOR_WINDOW;
+	wc.lpszMenuName  = NULL;
+	wc.lpszClassName = "MyWndClass";    // 注意这里，这是我们任意定义的用于标识该自定义窗口类的方式
+
+        // 向内核注册我们新创建的窗体类
+	RegisterClass(&wc);
+
+        // 用这个函数生成我们刚创建的窗体类，注意其第一个参数为我们的名字
+	hwnd = CreateWindow("MyWndClass", "Hello from MSYS",
+			WS_OVERLAPPEDWINDOW | WS_VISIBLE,
+			CW_USEDEFAULT,
+			CW_USEDEFAULT,
+			CW_USEDEFAULT,
+			CW_USEDEFAULT,
+			NULL,
+			NULL,
+			hInst,
+			0);
+
+        // 这是经典的Windows消息泵，在这里消息被不断取出然后进行翻译和分配
+	while(GetMessage(&msg, 0, 0, 0)) {
+                // 翻译的主要工作是对不同的键盘扫描码进行转换
+		TranslateMessage(&msg);
+
+                // 这只是隐含方式的对WndProc的调用，将消息发送过去
+		DispatchMessage(&msg);
+	}
+
+	return 0;
+}
+}}}
+
+下面是我们的编译过程，在这里我们就不介绍Makefile的修改方法了，相信有心的读者已经不需介绍而明白了Makefile是怎么工作的，我们通过手工编译的指令介绍一些更多的深入的MSYS使用方法：
+ {{{
+gcc main.c -o winhello2.exe
+}}}
+
+慢着，输入之后您会发现报告一个错误：
+ {{{
+$ gcc main.c -o winhello2.exe
+C:/DOCUME~1/Martin/LOCALS~1/Temp/cc6s8ih3.o:main.c:(.text+0x5b): undefined reference to `TextOutA@20'
+collect2: ld returned 1 exit status
+}}}
+
+这个警告是说，在链接的过程中，LD链接器找不到我们调用的TextOutA函数，这是正确的，因为这个函数在编译时并没有默认的包含进Windows程序必要的库之中。这里通过这个例子我们介绍一个MSYS下的小技巧，我们可以通过grep搜索命令搜索gcc编译器所包含的所有的库，来找到具体哪个库包含有这个函数：
+ {{{
+$ grep TextOutA /mingw/lib/*
+grep: /mingw/lib/gcc: Invalid request code
+Binary file /mingw/lib/libgdi32.a matches
+Binary file /mingw/lib/libuser32.a matches
+}}}
+
+我们找到了两个库：libgdi32.a, libuser32.a，然后我们对这两个库进行链接，就可以解决这个错误：
+ {{{
+gcc main.c -o winhello2.exe -lgdi32 -luser32
+}}}
+
+注意，包含外部的库，即时在VC上也有同样的工作需要做，所以不是MSYS的问题，一般库找不到的问题都可以通过这种搜索来解决，同时我们看到了作为控制台环境，编程所拥有的更多优势，我们甚至不需要让手指离开键盘就可以做任何事情 :)
+
+这一章关于Windows编程的教程结束了，在下面我们会继续介绍Windows上用MSYS写DLL、设备驱动以及OpenGL、DirectX程序的方法。
