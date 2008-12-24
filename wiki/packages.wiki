@@ -7,6 +7,7 @@ libgif    http://msys-cn.googlecode.com/files/libgif.mpkg
 libpng    http://msys-cn.googlecode.com/files/libpng.mpkg
 libtiff   http://msys-cn.googlecode.com/files/libtiff.mpkg
 tcltk     http://msys-cn.googlecode.com/files/tcltk.mpkg
+tcltk86   http://msys-cn.googlecode.com/files/tcltk86.mpkg
 zlib      http://msys-cn.googlecode.com/files/zlib.mpkg
 zip       http://msys-cn.googlecode.com/files/zip.mpkg
 unzip     http://msys-cn.googlecode.com/files/unzip.mpkg
@@ -22,6 +23,9 @@ graphviz  http://msys-cn.googlecode.com/files/graphviz.mpkg
 svn       http://msys-cn.googlecode.com/files/svn.mpkg
 wxWidgets http://msys-cn.googlecode.com/files/wxWidgets.mpkg
 resedit   http://msys-cn.googlecode.com/files/resedit.mpkg
+fftw      http://msys-cn.googlecode.com/files/fftw.mpkg
+mpfr      http://msys-cn.googlecode.com/files/mpfr.mpkg
+lua       http://msys-cn.googlecode.com/files/lua.mpkg
 update-1  http://msys-cn.googlecode.com/files/update-1.mpkg
 update-2  http://msys-cn.googlecode.com/files/update-2.mpkg
 }}}
