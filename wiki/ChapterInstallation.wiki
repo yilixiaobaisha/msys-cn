@@ -53,6 +53,9 @@ mpkg --install update-2
 mpkg --install insight    # insight可视化调试器
 mpkg --install SDL        # SDL游戏开发库
 mpkg --install zlib       # zlib压缩库
+mpkg --install mpfr       # GNU mpfr库
+mpkg --install fftw       # FFTW库（快速傅立叶变换）
+mpkg --install gmp        # GNU数值精度库
 }}}
 
  图形应用程序创建工具：
@@ -69,17 +72,19 @@ mpkg --install bochs      # Bochs虚拟机
 mpkg --install qemu       # Qemu虚拟机
 }}}
 
- TclTk图形开发脚本
+ 脚本开发
 {{{
 mpkg --install tcltk      # 跨平台脚本图形程序开发工具
+mpkg --install tcltk86    # Tcltk脚本开发工具8.6版本
+mpkg --install lua        # Lua嵌入式脚本工具包
 }}}
 
- Subversion版本控制程序
+ 版本控制程序
 {{{
 mpkg --install svn        # 著名的版本控制软件
 }}}
 
- 自动文档生成工具
+ 文档生成工具
 {{{
 mpkg --install doxygen    # 自动代码文档生成工具
 mpkg --install graphviz   # GNU方块图绘制软件
