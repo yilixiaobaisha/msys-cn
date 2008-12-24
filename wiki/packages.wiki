@@ -17,7 +17,6 @@ fltk      http://msys-cn.googlecode.com/files/fltk.mpkg
 fltk2     http://msys-cn.googlecode.com/files/fltk2.mpkg
 qemu      http://msys-cn.googlecode.com/files/qemu.mpkg
 bochs     http://msys-cn.googlecode.com/files/bochs.mpkg
-demo      http://msys-cn.googlecode.com/files/demo.mpkg
 doxygen   http://msys-cn.googlecode.com/files/doxygen.mpkg
 graphviz  http://msys-cn.googlecode.com/files/graphviz.mpkg
 svn       http://msys-cn.googlecode.com/files/svn.mpkg
@@ -26,6 +25,8 @@ resedit   http://msys-cn.googlecode.com/files/resedit.mpkg
 fftw      http://msys-cn.googlecode.com/files/fftw.mpkg
 mpfr      http://msys-cn.googlecode.com/files/mpfr.mpkg
 lua       http://msys-cn.googlecode.com/files/lua.mpkg
+gmp       http://msys-cn.googlecode.com/files/gmp.mpkg
 update-1  http://msys-cn.googlecode.com/files/update-1.mpkg
 update-2  http://msys-cn.googlecode.com/files/update-2.mpkg
+demo      http://msys-cn.googlecode.com/files/demo.mpkg
 }}}
