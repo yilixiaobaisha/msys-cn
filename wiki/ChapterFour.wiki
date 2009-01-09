@@ -769,8 +769,8 @@ int ex(nodeType *p) {
   使用方法：取消interpreter.c的编译，取而代之用compiler.c即可。关于这个计算器的代码分析，请等待后续，（未完待续）
 
 = 参考文献 =
-  # Flex 手册（见man flex）
-  # Bison 手册（见man bison）
+  # Flex 手册（见info flex命令）
+  # Bison 手册（见info bison命令）
   # bert hubert, Lex and YACC promer/HOWTO, http://ds9a.nl/lex-yacc/
   # Tom Niemann, A Compact Guide To LEX & YACC, epaperpress.com
   # http://dinosaur.compilertools.net/lex/index.html  
