@@ -1,4 +1,4 @@
-#summary 第四章、基于MSYS的 Flex & Bison 使用教程
+#summary 第四章、基于MSYS的 Flex & Bison （编译器开发工具）使用教程
 
 = 参与编写者 =
  * Martin Tang (QQ275596197)
