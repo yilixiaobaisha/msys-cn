@@ -11,11 +11,12 @@
  * GCC 4 编译器：http://msys-cn.googlecode.com/files/mingw.7z
  * GCC 3 编译器：http://msys-cn.googlecode.com/files/mingw3.7z
 
- * *注意*：GCC 4 存在部分兼容问题，比如Qemu代码无法编译，请斟酌考虑。
+ * *注意*：GCC 3 与 GCC 4 各有好处，3 对于大多数开源软件包兼容性最好，但是mingw官方编译的时候没有添加iconv，也就是没有unicode支持，而这里的 GCC 4 是支持unicode的。
 
 ==选择2==
 
  为了方便需要两个编译器一同可选择使用的需求，提供如下的双编译器共存版本：
+（注意：这个版本不能使用升级包，否则将会出错，目前暂时无法解决）
  * MSYS 双编译器版本：http://www.assembleart.org/down/MSYS/MSYS.7z
  * MSYS GCC 4整合版：http://down.heihaier.org/Windows/MSYS.7z
 
