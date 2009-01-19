@@ -1,5 +1,9 @@
 #summary 第三章、基于MSYS、MingW的Windows编程教程
 
+=版权信息=
+
+Copyright (C) 2008, 唐华欣
+
 =开始前的准备=
 
 MSYS开发环境可以实现完整的Windows应用程序的开发，基于其内部的Windows API函数，我们可以实现任何我们想要实现的函数而不需要安装庞大的VC、.net开发环境。至于MS为什么要推出.net开发环境呢？凭我的个人理解，主要的原因是：
