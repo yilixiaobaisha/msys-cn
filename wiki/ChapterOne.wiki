@@ -1,7 +1,8 @@
 #summary 第一篇、操作系统历史回顾
 
 =版权信息=
-Copyright (C) 2008, Tang Huaxin
+
+Copyright (C) 2008, 唐华欣
 
 =介绍=
 
