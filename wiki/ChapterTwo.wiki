@@ -87,7 +87,7 @@ vi test.c          # 编辑一个名叫test.c的C语言源代码文件，保存�
 
 首先，强烈推荐读者研究一下下面这一幅VIM编辑器的键盘指法表：
 
-[http://msys-cn.googlecode.com/files/vim_cheat_sheet.png]
+[http://msys-cn.googlecode.com/files/o_vim.png]
 
 然后我们开始熟悉各种命令的简单使用方法：
 
