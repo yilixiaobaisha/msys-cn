@@ -1,5 +1,6 @@
 #labels Phase-Implementation,Phase-Support
 {{{
+ssh       http://msys-cn.googlecode.com/files/ssh.mpkg
 insight   http://msys-cn.googlecode.com/files/insight.mpkg
 freetype2 http://msys-cn.googlecode.com/files/freetype2.mpkg
 libjpeg   http://msys-cn.googlecode.com/files/libjpeg.mpkg
