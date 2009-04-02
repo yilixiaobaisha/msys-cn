@@ -163,10 +163,10 @@ gcc main.c -o hellodll2.exe
 运行hellodll2.exe的结果如下：
  {{{
 $ ./hellodll2.exe 
-process attach
+process attached
 from main
 hello world
-thread attach
+process attached
 }}}
 
 相信从输出的文字的顺序，大家可以看到DllMain中的dwReason是按照什么顺序发送的。
