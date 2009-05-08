@@ -12,8 +12,9 @@
  * MSYS基础系统：http://msys-cn.googlecode.com/files/MSYS.7z
 
  以下只选其一
- * GCC 4 编译器：http://msys-cn.googlecode.com/files/mingw.7z
- * GCC 3 编译器：http://msys-cn.googlecode.com/files/mingw3.7z
+ * GCC 4.40 编译器：http://msys-cn.googlecode.com/files/mingw4.4.7z
+ * GCC 4.3  编译器：http://msys-cn.googlecode.com/files/mingw.7z
+ * GCC 3.52 编译器：http://msys-cn.googlecode.com/files/mingw3.7z
 
  * *注意*：GCC 3 与 GCC 4 各有好处，3 对于大多数开源软件包兼容性最好，但是mingw官方编译的时候没有添加iconv，也就是没有unicode支持，而这里的 GCC 4 是支持unicode的。
 
@@ -24,13 +25,14 @@
  * MSYS 双编译器版本：http://www.assembleart.org/down/MSYS/MSYS.7z
  * MSYS GCC 4整合版：http://down.heihaier.org/Windows/MSYS.7z
 
+ _* MSYS GCC 4整合版已经停止了维护，不推荐新用户使用 *_
  将其内容解压到相同目录下，运行其中的 MSYS.bat 即可启动运行 MSYS 系统。
 
 =mpkg 使用方法=
 
  mpkg --help打印的信息：
 {{{
-MSYS 包管理系统 版本 1.0
+MSYS 包管理系统 版本 1.1
 版权所有 (C) 2008, 唐华欣
 版权所有 (C) 2008, 合肥工业大学
 
@@ -39,6 +41,7 @@ MSYS 包管理系统 版本 1.0
 命令:
   --install PACKAGE     安装 PACKAGE
   --remove  PACKAGE     删除 PACKAGE
+  --add     PACKAGE     添加本地存储的.mpkg包，PACKAGE内容不包含".mpkg"扩展名
   --help                显示本消息
   --info                获得当前全部可下载、已安装的包列表
 
