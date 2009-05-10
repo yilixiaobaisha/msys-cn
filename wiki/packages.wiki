@@ -2,7 +2,7 @@
 {{{
 libusb    http://msys-cn.googlecode.com/files/libusb.mpkg
 libsqlite http://msys-cn.googlecode.com/files/libsqlite.mpkg
-gmp       http://msys-cn.googlecode.com/files/gmp.mpkg
+libgmp    http://msys-cn.googlecode.com/files/libgmp.mpkg
 ssh       http://msys-cn.googlecode.com/files/ssh.mpkg
 insight   http://msys-cn.googlecode.com/files/insight.mpkg
 freetype2 http://msys-cn.googlecode.com/files/freetype2.mpkg
