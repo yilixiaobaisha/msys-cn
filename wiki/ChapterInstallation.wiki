@@ -63,6 +63,9 @@ mpkg --install SDL        # SDL游戏开发库
 mpkg --install zlib       # zlib压缩库
 mpkg --install mpfr       # GNU mpfr库
 mpkg --install fftw       # FFTW库（快速傅立叶变换）
+mpkg --install libsqlite  # Sqlite3库，本地SQL数据库支持
+mpkg --install gmp        # GNU高精度浮点计算包
+mpkg --install libusb     # USB设备控制编程接口库
 }}}
 
  图形应用程序创建工具：
