@@ -1,5 +1,6 @@
 #labels Phase-Implementation,Phase-Support
 {{{
+libusb    http://msys-cn.googlecode.com/files/libusb.mpkg
 libsqlite http://msys-cn.googlecode.com/files/libsqlite.mpkg
 gmp       http://msys-cn.googlecode.com/files/gmp.mpkg
 ssh       http://msys-cn.googlecode.com/files/ssh.mpkg
