@@ -13,7 +13,6 @@
 
  以下只选其一
  * GCC 4.33 编译器：http://msys-cn.googlecode.com/files/mingw4.3.7z
- * GCC 4.3  编译器：http://msys-cn.googlecode.com/files/mingw.7z
  * GCC 3.52 编译器：http://msys-cn.googlecode.com/files/mingw3.7z
 
  * *注意*：GCC 3 与 GCC 4 各有好处，3 对于大多数开源软件包兼容性最好，但是mingw官方编译的时候没有添加iconv，也就是没有unicode支持，而这里的 GCC 4 是支持unicode的。
