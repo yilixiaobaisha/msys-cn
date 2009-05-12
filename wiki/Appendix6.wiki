@@ -18,7 +18,7 @@
  # ".rc" Windows资源文件代码
  # ".m" ObjectiveC/C++源代码
 
-= 源代码 =
+= Martin版本源代码 =
 {{{
 ###############################################################################
 # GENERIC DEPENDENCY DRIVEN MAKEFILE FOR MSYS
@@ -26,6 +26,8 @@
 #
 # Currently supported source formats:
 #  *.s, *.c, *.cpp, *.f, *.rc, *.m
+#
+# PROVIDED WITH NO WARRANTY OF ANY KIND, AND NO COPYRIGHT RESTRICTIONS
 ###############################################################################
 # Toolchain Setup
 PP=cpp
