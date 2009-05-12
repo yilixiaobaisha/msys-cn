@@ -12,7 +12,7 @@
  * MSYS基础系统：http://msys-cn.googlecode.com/files/MSYS.7z
 
  以下只选其一
- * GCC 4.40 编译器：http://msys-cn.googlecode.com/files/mingw4.4.7z
+ * GCC 4.33 编译器：http://msys-cn.googlecode.com/files/mingw4.3.7z
  * GCC 4.3  编译器：http://msys-cn.googlecode.com/files/mingw.7z
  * GCC 3.52 编译器：http://msys-cn.googlecode.com/files/mingw3.7z
 
