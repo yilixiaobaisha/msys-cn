@@ -64,7 +64,10 @@ mpkg --install mpfr       # GNU mpfr库
 mpkg --install fftw       # FFTW库（快速傅立叶变换）
 mpkg --install libsqlite  # Sqlite3库，本地SQL数据库支持
 mpkg --install gmp        # GNU高精度浮点计算包
+mpkg --install gsl        # GNU科学计算函数库
+mpkg --install cmanual    # GNU C语言函数参考手册
 mpkg --install libusb     # USB设备控制编程接口库
+mpkg --install gnupg      # GNU PGP兼容软件
 }}}
 
  图形应用程序创建工具：
