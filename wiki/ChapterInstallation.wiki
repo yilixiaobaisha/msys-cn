@@ -21,7 +21,7 @@
 
  为了方便需要两个编译器一同可选择使用的需求，提供如下的双编译器共存版本：
 （注意：这个版本不能使用升级包，否则将会出错，目前暂时无法解决）
- * MSYS 双编译器版本：http://www.assembleart.org/down/MSYS/MSYS.7z
+ * MSYS 双编译器版本：http://www.assembleart.org/down/MSYS/MSYS.7z（网站超负荷，暂停下载）
  * MSYS GCC 4整合版：http://ftp.ubuntu.org.cn/home/heihaier/MSYS.rar (U:ubuntuftp P:ubuntu)
 
  _* MSYS GCC 4整合版已经停止了维护，不推荐新用户使用 *_
