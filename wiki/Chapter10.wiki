@@ -264,7 +264,12 @@ int main(void)
 
     // 如果未为该驱动创建服务，尝试创建
     HANDLE hService;
-    hService = CreateService(hSCManager, "Example", "Example Driver", SERVICE_START | DELETE | SERVICE_STOP, SERVICE_KERNEL_DRIVER, SERVICE_DEMAND_START, SERVICE_ERROR_IGNORE, path, NULL, NULL, NULL, NULL, NULL);
+    hService = CreateService(hSCManager, "Example", "Example Driver", 
+        SERVICE_START | DELETE | SERVICE_STOP,
+        SERVICE_KERNEL_DRIVER,
+        SERVICE_DEMAND_START,
+        SERVICE_ERROR_IGNORE,
+        path, NULL, NULL, NULL, NULL, NULL);
 
     // 如果创建失败，则说明已经创建，我们直接打开
     if(!hService) {
@@ -305,3 +310,43 @@ http://technet.microsoft.com/en-us/sysinternals/bb896647.aspx
 启动该工具，选中察看内核信息，然后反复使用几次load进行加载，大家是不是看到我们刚才打印的信息了？
 
 = 4、应用程序访问 =
+
+Windows下访问设备驱动与UNIX没有本质的区别，只需要对设备虚拟文件（符号连接）当作普通文件进行操作即可：
+ {{{
+/*****************************************************************************
+ * Copyright (C) 2009, 唐华欣
+ *
+ * 本代码使用GPLv2协议，作者不对使用该代码导致的任何后果负任何责任
+ *****************************************************************************/
+#include <windows.h>
+
+// 在Windows下访问设备驱动也并不复杂，与Linux/UNIX下面一样，直接当作文件来进行
+// 读写即可
+int main(void)
+{
+    HANDLE hFile;
+    DWORD dwReturn;
+
+    // 打开设备驱动虚拟文件（对应test_create）
+    hFile = CreateFile("\\\\.\\test", GENERIC_READ | GENERIC_WRITE, 0, NULL, OPEN_EXISTING, 0, NULL);
+
+    // 如果打开文件成功
+    if(hFile)
+    {
+      // 执行写入（对应test_write）
+        WriteFile(hFile, "Hello from user mode!", sizeof("Hello from user mode!"),
+           &dwReturn, NULL); 
+
+        // 关闭设备虚拟文件句柄（对应test_close）
+        CloseHandle(hFile);
+    }
+    
+    return 0;
+}
+}}}
+
+怎么样，是不是在DbgView中看到我们写入的Hello from user mode!字符串了？
+
+= 5、后记 =
+
+本文是笔者半年来的研究加上各种论坛、国外论坛中的代码和各方文字资料编写而成的，同时参考了www.codeprojects.com、kqemu代码、KmdKit等多个软件包的资料，为以后开源产业内大规模的MingW应用奠定了基础，希望能够对读者有所帮助同时欢迎大家与我交流，愿我们在技术领域共同成长。
