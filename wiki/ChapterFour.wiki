@@ -5,7 +5,7 @@
  Copyright (C) 2009, 唐华欣
 
  本内容供读者随意转载，请保留本信息即可
- http://code.google.com/p/msys-cn/w/edit/Chapter10
+ http://code.google.com/p/msys-cn/w/edit/ChapterFour
 
 = 使用说明 =
  * 本章原本是后来插入，不是MSYS系列教程的一部分，不过放在这里比较合适，不需要的读者可以跳过，不影响后续章节的连续性
