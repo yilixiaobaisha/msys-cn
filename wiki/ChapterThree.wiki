@@ -5,7 +5,7 @@
 Copyright (C) 2009, 唐华欣
 
 本内容供读者随意转载，请保留本信息即可
-http://code.google.com/p/msys-cn/w/edit/ChapterThree
+http://code.google.com/p/msys-cn/wiki/ChapterThree
 
 =1、开始前的准备=
 
