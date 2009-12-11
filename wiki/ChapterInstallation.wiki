@@ -9,7 +9,7 @@
 ==选择1==
 
  首先，请先阅读本页最后的注意事项，然后安装下列基础包：
- * MSYS基础系统：http://msys-cn.googlecode.com/files/MSYS.7z
+ * MSYS基础系统（已更新，2009.12.12）：http://msys-cn.googlecode.com/files/MSYS-Update.rar
 
  以下只选其一
  * GCC 4.33 编译器：http://msys-cn.googlecode.com/files/mingw4.3.7z
@@ -50,10 +50,7 @@ MSYS 包管理系统 版本 1.1
 
 =附加软件包列表=
 
- 系统级更新（不需要安装update-1了，update-2为积累更新）
-{{{
-mpkg --install update-2
-}}}
+ 经过2009.12.12更新，已经不再需要更新update-2包，请老用户注意！
 
  扩展工具包
 {{{
