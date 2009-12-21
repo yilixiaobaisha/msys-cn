@@ -1,12 +1,5 @@
 #summary 第10章、基于MSYS的Windows Driver开发
 
-= 版权信息 =
-
-Copyright (C) 2009, 唐华欣
-
-本内容供读者随意转载，请保留本信息即可
-http://code.google.com/p/msys-cn/wiki/Chapter10
-
 = 1、介绍 =
 
 ==*警告：驱动程序开发对不熟悉的人来说是危险的，潜在会造成硬件的损坏和数据的丢失*==
