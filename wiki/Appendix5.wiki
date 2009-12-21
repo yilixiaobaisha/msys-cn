@@ -47,8 +47,6 @@ extern int lex();
 
 {{{
 /*****************************************************************************
- * Copyright (C) 2008, Tang Huaxin
- *
  * Lexer Design Note
  *
  *   [a-zA-Z_][a-zA-Z0-9_]*	label
