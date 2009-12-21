@@ -22,7 +22,6 @@
 {{{
 ###############################################################################
 # GENERIC DEPENDENCY DRIVEN MAKEFILE FOR MSYS
-# Copyright (C) 2008, Tang Huaxin
 #
 # Currently supported source formats:
 #  *.s, *.c, *.cpp, *.f, *.rc, *.m
