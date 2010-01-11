@@ -13,7 +13,6 @@
 
 =CONTACT=
 
- # Baidu IM Group : 1039984
  # QQ IM Group    : 18266455
  # Technical Forum: [http://www.woos.cn/bbs/thread.php?fid=34]
  # Maillist       : [http://groups.google.com/group/phoenix-development phoenix-development@googlegroups.com]
@@ -21,15 +20,7 @@
 =READ FIRST=
 
 Read _NOTICE_ in the end of this page first, then you need to install following packages manually:
- # MSYS Base System : http://msys-cn.googlecode.com/files/MSYS.7z
-
-And one of the following:
- # GCC 4 Compiler   : http://msys-cn.googlecode.com/files/mingw.7z
- # GCC 3 Compiler   : http://msys-cn.googlecode.com/files/mingw3.7z
-
- * *Notice*: Although gcc 4 has better optimization, it has some compatibility issues such as building the Qemu source, if you need to operate packages like this condition, you need to use gcc 3.
-
- Un-7z both to the same directory, execute the msys.bat then you get a working shell.
+ # MSYS Base System : http://msys-cn.googlecode.com/files/MSYS-update.rar
 
 The packaging system is based on _mpkg_, the tool is written in bash shell and is still at a initial stage, not including abilities such as solving dependency issues. Though, all the packages has been compiled with statical link to reduce dependency problem.
 
@@ -50,11 +41,6 @@ COMMANDS:
 
 Report bugs to website: http://code.google.com/p/msys-cn/issues
 
-}}}
-
- Please first do the following updates: (Updated randomly):
-{{{
-mpkg --install update-1
 }}}
 
  Essential development suit:
