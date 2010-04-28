@@ -1,11 +1,8 @@
 #summary 基于MSYS环境的精短C语言教程
 
-= 版权信息 =
+=教程辅导=
 
-Copyright (C) 2009, 唐华欣
-
-本内容供读者随意转载，请保留本信息即可
-http://code.google.com/p/msys-cn/wiki/Chapter9
+如果您对教程中的任何地方存在任何疑惑、或者问题，请加入我们的QQ群寻求帮助：804824578
 
 = 1、介绍 =
 
