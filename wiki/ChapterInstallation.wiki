@@ -7,7 +7,7 @@
   http://www.7-zip.org/
 
  请先阅读本页最后的注意事项，然后安装下列基础包：
- * MSYS基础系统（已更新，2009.12.12）：http://msys-cn.googlecode.com/files/MSYS-Update.rar
+ * MSYS基础系统（已更新，2009.12.12）：http://msys-cn.googlecode.com/files/MSYS-Update.7z
 
 =mpkg 包管理器使用方法=
 
