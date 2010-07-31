@@ -1,7 +1,6 @@
 #labels Phase-Implementation,Phase-Support
 {{{
-demo      http://msys-cn.googlecode.com/files/demo.mpkg
-golang    http://msys-cn.googlecode.com/files/go.mpkg
+golang    http://msys-cn.googlecode.com/files/golang.mpkg
 gsl       http://msys-cn.googlecode.com/files/gsl.mpkg
 gnupg     http://msys-cn.googlecode.com/files/gnupg.mpkg
 libusb    http://msys-cn.googlecode.com/files/libusb.mpkg
@@ -34,4 +33,6 @@ fftw      http://msys-cn.googlecode.com/files/fftw.mpkg
 mpfr      http://msys-cn.googlecode.com/files/mpfr.mpkg
 lua       http://msys-cn.googlecode.com/files/lua.mpkg
 update-1  http://msys-cn.googlecode.com/files/update-1.mpkg
-update-2  http://msys-cn.googlecode.com/files/update-2.mpkg}}}
+update-2  http://msys-cn.googlecode.com/files/update-2.mpkg
+demo      http://msys-cn.googlecode.com/files/demo.mpkg
+}}}
