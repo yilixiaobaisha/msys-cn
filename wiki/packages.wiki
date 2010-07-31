@@ -1,7 +1,7 @@
 #labels Phase-Implementation,Phase-Support
 {{{
 demo      http://msys-cn.googlecode.com/files/demo.mpkg
-go        http://msys-cn.googlecode.com/files/go.mpkg
+golang    http://msys-cn.googlecode.com/files/go.mpkg
 gsl       http://msys-cn.googlecode.com/files/gsl.mpkg
 gnupg     http://msys-cn.googlecode.com/files/gnupg.mpkg
 libusb    http://msys-cn.googlecode.com/files/libusb.mpkg
