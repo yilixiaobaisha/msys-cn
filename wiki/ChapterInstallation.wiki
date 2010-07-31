@@ -64,6 +64,7 @@ mpkg --install qemu       # Qemu虚拟机
 
  脚本开发
 {{{
+mpkg --install golang     # Google Go 语言
 mpkg --install tcltk      # 跨平台脚本图形程序开发工具
 mpkg --install tcltk86    # Tcltk脚本开发工具8.6版本
 mpkg --install lua        # Lua嵌入式脚本工具包
