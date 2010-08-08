@@ -12,23 +12,25 @@
 
 为了尽量扩大这个Makefile的使用范围，笔者扩展了这个通用 Makefile 支持了更多的源代码格式：
  # ".s" 汇编代码
- # ".c" C语言代码
- # ".cpp" C++代码
- # ".f" Fortran代码
- # ".rc" Windows资源文件代码
- # ".m" ObjectiveC/C++源代码
+ # ".c" C 语言代码
+ # ".cpp" C++ 代码
+ # ".f" Fortran 代码
+ # ".rc" Windows 资源文件代码
+ # ".m" Objective C/C++ 源代码
+ # ".go" Google Go 源代码
 
 = Martin版本源代码 =
 {{{
 ###############################################################################
-# GENERIC DEPENDENCY DRIVEN MAKEFILE FOR MSYS
+# 通用依赖关系驱动 MAKEFILE for MSYS
 #
-# Currently supported source formats:
-#  *.s, *.c, *.cpp, *.f, *.rc, *.m
+# 当前支持的代码格式:
+#  *.s, *.c, *.cpp, *.f, *.rc, *.m, *.go
 #
 # PROVIDED WITH NO WARRANTY OF ANY KIND, AND NO COPYRIGHT RESTRICTIONS
 ###############################################################################
-# Toolchain Setup
+
+# 工具链配置
 PP=cpp
 AS=as
 CC=gcc
@@ -36,24 +38,28 @@ CX=g++
 FC=gfortran
 RC=windres
 MC=windmc
+8G=8g
+8L=8l
 LD=gcc
 DB=insight
 
-# Compilation Configurations
+# 编译器配置
 INCLUDE=
 ASFLAGS=$(INCLUDE) -g
 CCFLAGS=$(INCLUDE) -g
 CXFLAGS=$(INCLUDE) -g
 FCFLAGS=$(INCLUDE) -g
+8GFLAGS=$(INCLUDE) -g
+8LFLAGS=$(INCLUDE) -g
 RCFLAGS=
 LDFLAGS=
 
-# Objectives
+# 文件对象
 OBJECT=
 TARGET=
 DEPEND=$(OBJECT:.o=.dep)
 
-# Procedures
+# 编译命令
 all : $(TARGET)
 	@$(RM) $(DEPEND)
 
@@ -69,7 +75,7 @@ run: all
 clean:
 	@$(RM) $(OBJECT) $(DEPEND) $(TARGET)
 
-# Standard Procedures
+# 标准处理过程
 %.dep : %.s
 	@$(PP) $(INCLUDE) -MM -MT $(@:.dep=.o) -o $@ $<
 
@@ -106,12 +112,11 @@ clean:
 %.o : %.rc
 	$(RC) $(RCFLAGS) $< $@
 
+%.8 : %.go
+	$(8G) $(8GFLAGS) -o $@ $<
+
+%.exe : %.8
+	$(8L) $(8LFLAGS) -o $@ $<
+
 -include $(DEPEND)
-
-
 }}}
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
