@@ -1,5 +1,6 @@
 #labels Phase-Implementation,Phase-Support
 {{{
+git       http://msys-cn.googlecode.com/files/git.mpkg
 golang    http://msys-cn.googlecode.com/files/golang.mpkg
 gsl       http://msys-cn.googlecode.com/files/gsl.mpkg
 gnupg     http://msys-cn.googlecode.com/files/gnupg.mpkg
