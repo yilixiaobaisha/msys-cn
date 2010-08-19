@@ -72,7 +72,8 @@ mpkg --install lua        # Lua嵌入式脚本工具包
 
  版本控制程序
 {{{
-mpkg --install svn        # 著名的版本控制软件
+mpkg --install svn        # Subversion 版本控制软件
+mpkg --install git        # Git 版本控制系统
 }}}
 
  文档生成工具
